@@ -1,0 +1,59 @@
+html,body {
+	/* use of vmax works great for portrait or landscape when it
+	comes to readable font sizes on mobile */
+	font-size: 4vmax;
+}
+
+/* Show class for the nav */
+.shown {
+	width: 12ch;
+	height: 7em;
+	padding: 0.2em;
+}
+
+nav {
+	/* Switch the nav to a column */
+	flex-direction: column;
+	/* width and height to 0 to "hide" the nav */
+	width: 0;
+	height: 0;
+	/* since our default width/height is 0,
+	don't let overflow content be shown */
+	overflow: hidden;
+}
+
+#menu {
+	/* display the hamburger menu */
+	display: block;
+	position: fixed;
+	top: 0.5em;
+	left: 0.5em;
+	height: 5vh;
+	z-index: 10;
+}
+
+.page {
+	/* The based don't need the images */
+	background-image: none !important;
+	padding: 0;
+}
+
+.block {
+	/* waste less space */
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+h1, h2, h3 {
+	/* waste less space */
+	margin: 0;
+	text-align: center;
+}
+
+@media only screen and (orientation: portrait) {
+	/* For portrait (default) don't put image next to text */
+	.photobox figure {
+		float: none;
+	}
+}
+

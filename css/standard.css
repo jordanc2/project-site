@@ -1,0 +1,226 @@
+html,body {
+	/* These properties will set defaults for the entire page */
+	font-size: 3vh;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	background-color: #f0f0f0;
+}
+
+/* CSS common to each page */
+.page {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	box-sizing: border-box;
+	border: 0;
+	padding: 2em;
+	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: -100vw;
+	transition: left 0.5s ease-in-out;
+	z-index: 2;
+}
+
+#page1 {
+	padding: 0;
+}
+
+.block {
+	position: absolute;
+	top: 0;
+	right: -100vw;
+	transition: left 0.5s ease-in-out;
+	z-index: 1;
+	text-align: left;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/*
+For mobile, nav is not visibile until hamburger menu is clicked
+*/
+nav {
+	overflow: hidden;
+	transition: all 0.25s ease-in-out;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	display: flex;
+	z-index: 21;
+	position: fixed;
+	top: 0;
+	left: 0;
+	flex-direction: row; /* Switch flexbox to row */
+	justify-content: space-evenly;
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+nav > a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+.onscreen {
+	left: 0;
+}
+
+.offscreen {
+	left: -100vw;
+}
+
+#logo {
+	text-align: center;
+	margin-top: 10vh;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+#logo header {
+	font-family: "Indie Flower", sans-serif;
+	font-size: 2rem;
+}
+
+#logo header:first-child {
+	line-height: 0.8em;
+}
+
+#logo header:last-child {
+	line-height: 1.0em;
+}
+
+#logo img {
+	height: 60vmin;
+	display: block;
+	margin: auto;
+}
+
+.photobox {
+	float: left;
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+.photobox div {
+	text-align: left;
+	padding: 0.5em;
+	font-size: 0.9em;
+}
+
+.photobox img {
+	height: 20vh;
+}
+
+.photobox figure {
+	margin: 0;
+	padding: 0.25em;
+	background-color: white;
+	display: inline-block;
+	float: left;
+	margin-right: 0.5em;
+}
+
+.photobox figcaption {
+	font-size: 0.5rem;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+#menu {
+	display: none;
+}
+
+#contact + .block img {
+	height: 1.5em;
+	vertical-align: middle;
+	padding-bottom: 0.25em;
+	padding-right: 0.25em;
+}
+
+#contact + .block > div {
+	display: flex;
+	flex-direction: column;
+	width: calc(2em + 12ch);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+.enlarge {
+	height: 2em !important;
+}
+
+#page1 {
+	background-image: url('../images/background.jpg');
+}
+
+.photobox figure .narrow-photo-wrapper {
+	background-color: #808080;
+	padding: 0;
+	margin-bottom: 0.5em;
+	width: 20vh;
+	height: 20vh;
+	text-align: center;
+}
+
+#about {
+	background-image: url('../images/c64.jpg');
+}
+
+#about + .block {
+	background-image: url('../images/c64bg.jpg');
+}
+
+#services {
+	background-image: url('../images/www.jpg');
+}
+
+#services + .block {
+	background-image: url('../images/wwwbg.jpg');
+}
+
+#apps {
+	background-image: url('../images/apps.jpg');
+}
+
+#apps + .block {
+	background-image: url('../images/appsbg.jpg');
+}
+
+#contact {
+	background-image: url('../images/contact.jpg');
+}
+
+#contact + .block {
+	background-image: url('../images/contactbg.jpg');
+}
+
+.block {
+	padding-left: 20vw;
+	padding-right: 20vw;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#contact + .block img {
+	transition: all 0.25s ease-in-out;
+}
+
